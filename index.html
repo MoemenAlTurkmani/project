@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "hBtqu79VN4IiQaK6S",
+            });
+        })();
+    </script>
+    </head>
+    <body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="nav-bar">
+            <a href="#" class="logo"><span class="My">My</span>Portfolio</a>
+            <div class="nav-list">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="border">
+            <div class="hero-content">
+                <h3>Welcome to My Portfolio</h3>
+                <p>I'm a passionate developer exploring the world of code.</p>
+                <a href="#projects" class="btn">View Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h4>About Me</h4>
+        <p class="about-text">Hello! I'm a web developer with a love for building creative and user-friendly websites. With a strong foundation in HTML, CSS, and JavaScript, I aim to create engaging online experiences.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 id="h2">My Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p class="project-description">Description of the first project.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p class="project-description">Description of the second project.</p>
+            </div>
+            <div class="project">
+                <h3>Project 3</h3>
+                <p class="project-description">Description of the third project.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="testimonials">
+        <h2>What People Say</h2>
+        <div class="testimonial-container">
+            <img alt="" src="" class="img" id="image">
+            <p class="comment" id="comment"></p>
+            <p class="name" id="prenom"></p>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+       
+        <form action=".php" method="post">
+            <pre class="form">
+                <h2 class="section-title">Contact Me</h2>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="text" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="bttn" id="submit">Send</button>
+            </pre>
+        </form>
+    </section>
+
+
+
+    <footer>
+        <div>
+            ©2024 MyPortfolio.All rights reserved
+        </div>
+    </footer>
+
+</body>
+</html>
